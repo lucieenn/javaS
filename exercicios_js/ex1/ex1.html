@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Desafio 1</title>
+</head>
+<body>
+<script>
+        let quantidade = parseInt(prompt("Qual quantidade de números vc deseja inserir?"));
+        let numeros = [];
+ 
+        for (let i = 0; i < quantidade; i++) {
+            let num = parseInt(prompt(`Digite o número ${i + 1}:`));
+            numeros.push(num);
+        }
+        numeros.push(10);
+ 
+        numeros.sort((a, b) => a - b);
+ 
+        let posicao10 = numeros.indexOf(10);
+ 
+        alert(`Você digitou ${quantidade} números\nArray ordenado: ${numeros}\nO número 10 está na posição: ${posicao10}`);
+</script>
+</body>
+</html>

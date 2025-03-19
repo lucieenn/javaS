@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="combustiveis.css">
+    <script src="combustiveis.js" type="text/javascript" defer></script>
+    <title>combustiveis</title>
+</head>
+<body>
+    <Div class="combustiveis">
+
+        <h1>Qual a porcentagem do seu veiculo?</h1>
+
+        <div id="tiposComb"> 
+            <input type="number" id="cxText" placeholder="R$">
+            <br>
+
+            <input type="radio" id="preco" > 
+            <label for="gasolina">Gasolina</label>
+            <input type="radio" id="etanol">
+            <label for="etanol">Etanol</label>
+            
+            <select name="" id="porcentagem" >
+                <option value=""></option>
+                <option value="65">65%</option>
+                <option value="66">66%</option>
+                <option value="67">67%</option>
+                <option value="68">68%</option>
+                <option value="69">69%</option>
+                <option value="70">70%</option>'
+                <option value="71">71%</option>'
+                <option value="72">72%</option>
+                <option value="73">73%</option>
+                <option value="74">74%</option>
+                <option value="75">75%</option>
+            </select> 
+            <br>
+            <button id="btn" type="button" onclick="calcular()">Calcular</button>
+        </div>
+        <div id="resposta"></div>
+    </Div>
+</body>
+</html>

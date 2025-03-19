@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+
+    <!-- <script>
+        alert('Minha primeira mensagem')
+        window.confirm('TA GOSTANO')
+        window.prompt('Qual é o seu name')
+    </script> -->
+
+    <!-- <script>
+        let nome = window.prompt('Qual o seu nome')
+        window.alert('Bem vindo ' + nome + "!")
+    </script> -->
+
+    <!-- <script>
+        var n1 = Number.parseInt(window.prompt('Digite um número ')) // String
+        var n2 = Number.parseInt(window.prompt('Digite outro numero ')) //String
+        var s = n1 + n2
+        window.alert('A soma dos valores é' + s) //concatenação
+        //(number+number) para adição
+        //(string + string ) para concatenção
+    </script> -->
+
+    <!-- <script>
+        var peso = Number.parseFloat(window.prompt("Digite o peso: "))
+        var altura = Number.parseFloat(window.prompt("Digite a altura: "))
+        var resultado = (peso / ( altura*altura ))
+        window.alert('O seu imc é: ' + resultado)
+    </script> -->    
+
+    <!-- <script>
+        let nome = window.prompt('Qual é seu nome?' )
+        alert("Seu nome tem " + nome.lenght + " letras.")
+
+        document.write(`Eu ${nome} em letras maiúsculas: <strong>${nome.toUpperCase()}</strong>`)
+        document.write(` <br/> Seu ${nome} em letras minusculas: <strong> ${nome.toLowerCase()}</strong> `)
+    </script> -->
+
+    <!-- <script>
+        //entrada
+    let segP = prompt("Digite os segundos: ")
+        //processamento
+    let hora = (segP / 3600) |0
+    let min = ((seg-hora(3600)) / 60) |0
+    let segR= segP-(horas*3600)-(minutos*60) 
+        //saida
+     window.alert(`Entrada (${segP}s) Possui:  ${hora} horas, ${min}  minutos e  ${segR}`)
+    </script> -->
+    
+    <!-- <script>
+        //entrada de dados
+        let entrada = prompt("Digite a quantidade de anos: ")
+
+        //processamento
+        let meses= entrada / 12
+        let semanas = meses / 4
+        let dias = entrada / l
+       
+
+        //saida
+        alert(`Entrada (${entrada} ano) corresponde a: ${meses}` )
+    </script> -->
+    <main>
+        <div id="div01" onclick="clicar()" onmouseenter="ent1()" onmouseout="sair1()" >1</div>
+        <div id="div02" onclick="clicar()" onmouseenter="ent2()" onmouseout="sair2()" >2</div>
+        <div id="div03" onclick="clicar()" onmouseenter="ent3()" onmouseout="sair3()" >3</div>
+        <div id="div04" onclick="clicar()" onmouseenter="ent4()" onmouseout="sair4()" >4</div>
+        <div id="div05" onclick="clicar()" onmouseenter="ent5()" onmouseout="sair5()" >5</div>
+        <div id="div06" onclick="clicar()" onmouseenter="ent6()" onmouseout="sair6()" >6</div>
+        <div id="div07" onclick="clicar()" onmouseenter="ent7()" onmouseout="sair7()" >7</div>
+        <div id="div08" onclick="clicar()" onmouseenter="ent8()" onmouseout="sair8()" >8</div>
+        <div id="div09" onclick="clicar()" onmouseenter="ent9()" onmouseout="sair9()" >9</div>
+        <div id="div10" onclick="clicar()" onmouseenter="ent10()" onmouseout="sair10()">10</div>
+        
+        <button id="btn" onclick="btnclick()" onmouseenter="ent11" onmouseout="sair11">mudar</button>
+    </main>
+    <script>
+        a = window.document.getElementById("div01")
+        b = window.document.getElementById("div02")
+        c = window.document.getElementById("div03")
+        d = window.document.getElementById("div04")
+        e = window.document.getElementById("div05")
+        f = window.document.getElementById("div06")
+        g = window.document.getElementById("div07")
+        h = window.document.getElementById("div08")
+        i = window.document.getElementById("div09")
+        j = window.document.getElementById("div10")
+        k = window.document.getElementsByTagName("body")[0]
+
+
+        function clicar(){
+        a.innerText='Clicou'
+        b.innerText='Clicou'
+        c.innerText='Clicou'
+        d.innerText='Clicou'
+        e.innerText='Clicou'
+        f.innerText='Clicou'
+        g.innerText='Clicou'
+        h.innerText='Clicou'
+        i.innerText='Clicou'
+        j.innerText='Clicou'
+        
+    }
+    function btnclick(){
+        k.style.background='white'
+    }
+
+
+    function ent1(){
+        a.innerText='Entrou'
+        a.style.background='white'
+    }
+    function ent2(){
+        b.innerText='Entrou'
+        b.style.background='White'
+    }
+    function ent3(){
+        c.innerText='Entrou'
+        c.style.background='White'
+    }
+    function ent4(){
+        d.innerText='Entrou'
+        d.style.background='White'
+    }
+    function ent5(){
+        e.innerText='Entrou'
+        e.style.background='White'
+    }
+    function ent6(){
+        f.innerText='Entrou'
+        f.style.background='White'
+    }
+    function ent7(){
+        g.innerText='Entrou'
+        g.style.background='White'
+    }
+    function ent8(){
+        h.innerText='Entrou'
+        h.style.background='White'
+    }
+    function ent9(){
+        i.innerText='Entrou'
+        i.style.background='White'
+    }
+    function ent10(){
+        j.innerText='Entrou'
+        j.style.background='White'
+    }
+    //sair (onmouseout)
+    function sair1(){
+        a.innerText=""
+        a.style.background="gray"
+    }
+    function sair2(){
+        b.innerText=""
+        b.style.background="gray"
+    }
+    function sair3(){
+        c.innerText=""
+        c.style.background="gray"
+    }
+    function sair4(){
+        d.innerText=""
+        d.style.background="gray"
+    }
+    function sair5(){
+        e.innerText=""
+        e.style.background="gray"
+    }
+    function sair6(){
+        f.innerText=""
+        f.style.background="gray"
+    }
+    function sair7(){
+        g.innerText=""
+        g.style.background="gray"
+    }
+    function sair8(){
+        h.innerText=""
+        h.style.background="gray"
+    }
+    function sair9(){
+        i.innerText=""
+        i.style.background="gray"
+    }
+    function sair10(){
+        j.innerText=""
+        j.style.background="gray"
+    }
+
+    
+    </script>
+</body>
+</html>
