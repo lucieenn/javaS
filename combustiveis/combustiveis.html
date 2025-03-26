@@ -1,45 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="combustiveis.css">
     <script src="combustiveis.js" type="text/javascript" defer></script>
-    <title>combustiveis</title>
+    <title>Calculadora de Combustível</title>
 </head>
 <body>
-    <Div class="combustiveis">
+    <div class="container">
+        <h1>Calculadora de Combustível</h1>
+        <form id="fuelForm">
+            <label for="preco">Preço do Combustível:</label>
+            <input type="number" id="preco" placeholder="Digite o preço" required>
 
-        <h1>Qual a porcentagem do seu veiculo?</h1>
+            <div>
+                <label>
+                    <input type="radio" name="combustivel" value="gasolina" checked> Gasolina
+                </label>
+                <label>
+                    <input type="radio" name="combustivel" value="alcool"> Álcool
+                </label>
+            </div>
 
-        <div id="tiposComb"> 
-            <!-- pedindo o valor do alcool -->
-            <label for="preco">Digite o valor da gasolina:</label>
-            <input type="number" id="cxText" placeholder="R$" id="GasolinaP">
-            <br>
-            <label for="preco">Digite o valor do etanol:</label>
-            <input type="number" id="cxText" placeholder="R$" id="etanolP">
-
-            <br>
-            <label for="porcentagem">Digite a porcentagem do seu veiculo:</label>
-            <select name="" id="porcentagem" >
-                <option value=""></option>
-                <option value="65">65%</option>
-                <option value="66">66%</option>
-                <option value="67">67%</option>
-                <option value="68">68%</option>
-                <option value="69">69%</option>
-                <option value="70">70%</option>'
-                <option value="71">71%</option>'
-                <option value="72">72%</option>
-                <option value="73">73%</option>
-                <option value="74">74%</option>
+            <label for="porcentagem">Eficiência do Veículo (%):</label>
+            <select id="porcentagem">
+                <option value="70">70%</option>
                 <option value="75">75%</option>
-            </select> 
-            <br>
-            <button id="btn" type="button" onclick="calcular()">Calcular</button>
-        </div>
-        <div id="resposta"></div>
-    </Div>
+                <option value="80">80%</option>
+                <option value="85">85%</option>
+                <option value="90">90%</option>
+            </select>
+
+            <button type="button" onclick="calcular()">Calcular</button>
+        </form>
+
+        <div id="resp"></div>
+    </div>
+
+   
 </body>
 </html>
